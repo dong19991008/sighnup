@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./signup.css">
+    <script src ="./js/regist.js"></script>
+</head>
+<body>
+    <main>
+        <h1>회원가입</h1>
+      <form action="signup" method="post"  onsubmit="return sendit()">
+        <div class="signup-box">
+            <label for="username">이름</label>
+            <input type="text"
+            id="username"
+            name="username"
+            >
+        </div>
+
+        <div class="signup-box">
+            <label for="email">이메일</label>
+        <input type="text"
+        name="email"
+        id="email"
+        placeholder="이메일을 입력하세요"
+        maxlength="50"></div>
+
+        <div class="signup-box">
+            <label for="password">비밀번호</label>
+            <input type="password"
+            name="userpw"
+            id="userpw"
+            maxlength="20"
+            placeholder="최대 20자">
+        </div>
+        <div class="signup-box">
+            <label for="re-password">비밀번호 확인</label>
+            <input type="password"
+            name="userpw_re"
+            id="userpw_re"
+            maxlength="20"
+            placeholder="최대 20자">
+        </div>
+
+        <div class="signup-box">
+            <label for="ssn1">주민등록번호</label>
+            <div class="ssn-inputs">
+              <input type="text" id="ssn1" name="ssn1" maxlength="6" placeholder="앞 6자리">
+              <input type="text" id="ssn2" name="ssn2" maxlength="7" placeholder="뒤 7자리">
+            </div>
+          </div>
+          
+    </div>
+
+       <div class="sighnup-box">
+       <label>성별</label> <br>
+       <label for="male">
+        <input type="radio" name="gender"
+        value="male" id="male">남자
+       </label>
+<label for="female">
+<input type="radio" name="gender" id="femail" value="femail">여자</label>
+       </div>
+<fieldset>
+<legend>관심사 선택</legend>
+<label for="html">HTML</label>
+<input type="checkbox" name="html" id="html" value="html">
+<label for="css">CSS</label>
+<input type="checkbox" name="css" id="css" value="css">
+<label for="python">Python</label>
+<input type="checkbox" name="python" id="python" value="python">
+<label for="java">Java</label>
+<input type="checkbox" name="java" id="java" value="java">
+<label for="js">JavaScript</label>
+<input type="checkbox" name="js" id="js" value="js">
+<label for="c++">C++</label>
+<input type="checkbox" name="c++" id="c++" value="c++">
+</fieldset>
+
+<div class="signup-box">
+    <label for="intro">자기 소개</label> <br>
+    <textarea name="intro" id="intro" placeholder="자기소개 작성해주세요" rows="3"></textarea>
+
+    <button type="submit">가입하기</button>
+    <p class="footer-text">이미 계정이 있으신가요? <a href="./로그인.html">로그인</a></p>
+
+      </form>
+      <button class="help-btn">도움말</button>
+    </main>
+</body>
+</html>
